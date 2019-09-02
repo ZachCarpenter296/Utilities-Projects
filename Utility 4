@@ -1,0 +1,11 @@
+int sum = 0;
+int number = 1;
+while (number < 21)
+{
+    if(number % 3 == 0)
+    {
+        sum = sum + number;
+    }
+    number++;
+}
+Console.WriteLine("The sum of numbers divisable by 3 but under 20 is " + sum);
