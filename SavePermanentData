@@ -1,4 +1,5 @@
-//Making a load so you can start where you left off
+//saves binary information, like int, bool, float
+//Unity specific values like Vector3 can be split into three floats and stored
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
