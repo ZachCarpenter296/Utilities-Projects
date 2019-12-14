@@ -1,0 +1,16 @@
+//Useful to keep audio you add at the main menu, like background music.
+//Basically makes sure that when you go back to the menu it doesn't create
+//another instance of the Audio Source
+static keepAudio instance = null;
+    private void Awake()
+    {
+        if(instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+    }
