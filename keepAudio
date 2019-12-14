@@ -1,6 +1,6 @@
-//Useful to keep audio you add at the main menu, like background music.
-//Basically makes sure that when you go back to the menu it doesn't create
-//another instance of the Audio Source
+//Allows you to add music onAwake() when you start your game, and keep it into the next
+//scenes, as well as prevents more instances of the Audio Source being created if you
+//go back to the main menu
 static keepAudio instance = null;
     private void Awake()
     {
